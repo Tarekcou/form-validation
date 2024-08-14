@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Valid using JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="form-card">
+      <h1>Form Validation</h1>
+      <form action="">
+        <div class="input-group">
+          <label for="Name">Name:</label
+          ><input
+            id="contact-name"
+            onkeyup="validateName()"
+            type="text"
+            placeholder="type your name"
+          />
+          <span id="name-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone:</label
+          ><input
+            id="contact-phone"
+            onkeyup="validatePhone()"
+            type="number"
+            placeholder="your phone no"
+          />
+          <span id="phone-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="email">Email:</label
+          ><input
+            id="contact-email"
+            onkeyup="validateEmail()"
+            type="text"
+            placeholder="Email"
+          />
+          <span id="email-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="message"></label
+          ><input class="message" type="text" placeholder="Message:" />
+          <span id="message-error"></span>
+        </div>
+        <button onclick="return onSubmit()">Save</button>
+        <span id="submit-error"></span>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
